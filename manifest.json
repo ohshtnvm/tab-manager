@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Swiper",
+  "version": "1.0.0",
+  "description": "tab manager that screengrabs and swipes to either keep open, close and bookmark",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab Swiper"
+  }
+}

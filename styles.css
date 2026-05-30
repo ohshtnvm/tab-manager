@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 16px;
+  background: #f5f5f5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#triage-container {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tab-preview {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+#tab-info {
+  margin-bottom: 16px;
+}
+
+#tab-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#tab-url {
+  font-size: 12px;
+  color: #666;
+  word-break: break-all;
+}
+
+#actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+button {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#keep-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+#close-btn {
+  background: #f44336;
+  color: white;
+}
+
+#bookmark-btn {
+  background: #2196F3;
+  color: white;
+}
+
+#save-btn {
+  background: #FF9800;
+  color: white;
+}
+
+#view-boards-btn {
+  background: #9C27B0;
+  color: white;
+  width: 100%;
+}
+
+#board-select {
+  margin: 12px 0;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+#board-select input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#boards-container {
+  padding: 20px;
+}
+
+.board-section {
+  margin-bottom: 32px;
+}
+
+.board-section h2 {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 8px;
+  font-size: 13px;
+  line-height: 1.3;
+  min-height: 26px;
+}
+
+.card a {
+  display: block;
+  padding: 8px;
+  background: #2196F3;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+}
+
+.card a:hover {
+  background: #1976D2;
+}

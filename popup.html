@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="triage-container">
+    <div id="tab-preview"></div>
+    <div id="tab-info">
+      <h3 id="tab-title"></h3>
+      <p id="tab-url"></p>
+    </div>
+    <div id="actions">
+      <button id="keep-btn">Keep</button>
+      <button id="close-btn">Close</button>
+      <button id="bookmark-btn">Bookmark</button>
+    </div>
+    <div id="board-select" style="display:none;">
+      <label for="board-name">Board name:</label>
+      <input type="text" id="board-name" placeholder="e.g. Research">
+      <button id="save-btn">Save</button>
+    </div>
+    <div id="nav">
+      <button id="view-boards-btn">View Boards</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

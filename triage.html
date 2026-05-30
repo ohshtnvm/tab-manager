@@ -6,7 +6,8 @@
 </head>
 <body>
   <div id="triage-container">
-    <div id="tab-preview"></div>
+    <div id="progress"></div>
+    <img id="tab-preview" alt="tab screenshot">
     <div id="tab-info">
       <h3 id="tab-title"></h3>
       <p id="tab-url"></p>
@@ -17,14 +18,15 @@
       <button id="bookmark-btn">Bookmark</button>
     </div>
     <div id="board-select" style="display:none;">
-      <label for="board-name">Board name:</label>
-      <input type="text" id="board-name" placeholder="e.g. Research">
+      <label for="board-pick">Save to board:</label>
+      <select id="board-pick"></select>
+      <input type="text" id="new-board" placeholder="New board name" style="display:none;">
       <button id="save-btn">Save</button>
     </div>
     <div id="nav">
       <button id="view-boards-btn">View Boards</button>
     </div>
   </div>
-  <script src="popup.js"></script>
+  <script src="triage.js"></script>
 </body>
 </html>

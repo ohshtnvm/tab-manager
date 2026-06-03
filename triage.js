@@ -87,7 +87,10 @@ document.getElementById('board-pick').onchange = (e) => {
     e.target.value === '__new__' ? 'block' : 'none';
 };
 
-document.getElementById('save-btn').onclick = async () => {
+document.getElementById('save-keep-btn').onclick = () => saveBookmark(false);
+document.getElementById('save-close-btn').onclick = () => saveBookmark(true);
+
+async function saveBookmark(closeAfter) {
   const pick = document.getElementById('board-pick');
   let name = pick.value;
   if (name === '__new__') {
@@ -110,8 +113,12 @@ document.getElementById('save-btn').onclick = async () => {
 
   await chrome.storage.local.set({ boards });
   document.getElementById('new-board').value = '';
+
+  if (closeAfter) {
+    try { await chrome.tabs.remove(currentTab.id); } catch (e) {}
+  }
   await present(idx + 1);
-};
+}
 
 document.getElementById('view-boards-btn').onclick = openBoards;
 
